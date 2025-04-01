@@ -1,14 +1,14 @@
 ## Retrieval and Question Answering Exercise
 
-In this exercise, your goal is to utilize a vector database to attempt to retrieve relevant context to answer questions about Best Picture winners since 2000. Each question can be answered from the Wikipedia page of each movie. 
+In this exercise, our goal was to utilize a vector database to attempt to retrieve relevant context to answer questions about Best Picture winners since 2000. Each question is attempted to be answered from the Wikipedia page for each movie. 
 
-You have been provided a list of movies and links to their Wikipedia pages in the file best_picture_2000.csv.
+We started with a list of movies along with links to their Wikipedia pages in the file best_picture_2000.csv.
 
-Build a vector database off of these Wikipedia pages which, given a query, can find potentially relevant context to answer the question. 
+We then build a vector database off of these Wikipedia pages which, given a query, can find potentially relevant context to answer the question. 
 
-Then use a question-answering model from HugingFace to anwser the question.
+We then used a question-answering model from HugingFace to anwser the questions.
 
-A list of question and answer pairs is given in QAs.csv, but feel free to add to it yourself.
+A comparison of the questions and the aswers generated are shown below.
 
 ## Questions and Answers
 
@@ -42,4 +42,4 @@ A list of question and answer pairs is given in QAs.csv, but feel free to add to
 
 ## Evaluation
 
-The model gets most of the answers correct. 
+The model gets most of the answers correct.
