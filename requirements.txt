@@ -1,9 +1,11 @@
 chromadb
 ipywidgets
-transformers==4.36.0
+transformers
 sentence-transformers
 nltk
 gensim
 scipy
 datasets
 huggingface_hub
+pandas
+bs4

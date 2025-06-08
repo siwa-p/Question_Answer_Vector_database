@@ -1,6 +1,0 @@
-{
-    "name": "Python for NLP",
-    "build": {
-        "dockerfile": "Dockerfile"
-    }
-}

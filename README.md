@@ -2,9 +2,35 @@
 
 In this exercise, our goal was to utilize a vector database to attempt to retrieve relevant context to answer questions about Best Picture winners since 2000. Each question is attempted to be answered from the Wikipedia page for each movie. 
 
-We started with a list of movies along with links to their Wikipedia pages in the file best_picture_2000.csv.
+## Setup
 
-We then build a vector database off of these Wikipedia pages which, given a query, can find potentially relevant context to answer the question. 
+### Prerequisites
+- Python 3.10 or higher
+- Miniconda or virtual environment support
+- Required Python libraries (see `requirements.txt`)
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/Question_Answer_Vector_database.git
+   cd Question_Answer_Vector_database
+   ```
+
+2. Create a conda virtual environment
+   ```bash
+   conda create --prefix ./env python=3.10
+   conda activate ./env
+   ```
+3. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Details of the project
+We started with a list of movies along with links to their Wikipedia pages in the file **"best_picture_2000.csv"**.
+
+We then scraped the Wikipedia pages for text that may contain answers.
+The scapred text were tokenized into sentences and stored in a vector database, which, given a query, could then be used to find potentially relevant context to answer the question.
 
 We then used a question-answering model from HugingFace to anwser the questions.
 
